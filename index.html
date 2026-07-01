@@ -3,157 +3,158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Religare Cast</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-
-background:#0b0b0b;
-color:white;
-font-family:Inter,sans-serif;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-height:100vh;
-
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(139, 30, 30, 0.20), transparent 35%),
+    linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
+  color: #f4eee3;
+  font-family: Inter, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 18px;
 }
 
-.container{
-
-max-width:550px;
-width:90%;
-text-align:center;
-
+.container {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  border: 1px solid rgba(244, 238, 227, 0.12);
+  border-radius: 28px;
+  padding: 38px 24px 30px;
+  background: rgba(10, 10, 10, 0.78);
+  box-shadow: 0 0 50px rgba(0,0,0,.55);
 }
 
-h1{
-
-font-family:Cinzel,serif;
-font-size:54px;
-letter-spacing:5px;
-margin-bottom:10px;
-
+.mark {
+  width: 78px;
+  height: 78px;
+  border: 1px solid rgba(244, 238, 227, 0.25);
+  border-radius: 50%;
+  margin: 0 auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b1e1e;
+  font-size: 34px;
 }
 
-h2{
-
-font-size:22px;
-font-weight:300;
-color:#d6d6d6;
-margin-bottom:35px;
-
+h1 {
+  font-family: Cinzel, serif;
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
 }
 
-.frase{
-
-font-size:20px;
-font-style:italic;
-margin-bottom:50px;
-color:#b8b8b8;
-
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ddd2c3;
+  margin-bottom: 24px;
 }
 
-.botao{
-
-display:block;
-
-text-decoration:none;
-
-background:#1c1c1c;
-
-padding:22px;
-
-margin:18px 0;
-
-border-radius:12px;
-
-color:white;
-
-font-size:20px;
-
-font-weight:600;
-
-transition:.25s;
-
-border:1px solid #2d2d2d;
-
+.divider {
+  width: 90px;
+  height: 2px;
+  background: #8b1e1e;
+  margin: 0 auto 26px;
 }
 
-.botao:hover{
-
-background:#8B1E1E;
-
-transform:translateY(-2px);
-
+.texto {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #cfc5b7;
+  margin-bottom: 28px;
 }
 
-footer{
-
-margin-top:60px;
-
-font-size:13px;
-
-color:#777;
-
+.frase {
+  font-size: 15px;
+  color: #9f9383;
+  margin-bottom: 26px;
 }
 
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #f4eee3;
+  background: #171717;
+  border: 1px solid rgba(244, 238, 227, 0.14);
+  padding: 18px 18px;
+  border-radius: 16px;
+  margin: 13px 0;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.btn span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9f9383;
+  margin-top: 5px;
+}
+
+.btn:hover {
+  background: #8b1e1e;
+  transform: translateY(-2px);
+}
+
+footer {
+  margin-top: 30px;
+  color: #766d63;
+  font-size: 13px;
+}
 </style>
-
 </head>
 
 <body>
+  <main class="container">
+    <div class="mark">✦</div>
 
-<div class="container">
+    <h1>RELIGARE</h1>
+    <h2>Aquilo que não se vê.</h2>
 
-<h1>RELIGARE</h1>
+    <div class="divider"></div>
 
-<h2>Aquilo que não se vê.</h2>
+    <p class="texto">
+      Histórias, religiões, mistérios e perguntas que atravessam aquilo que a gente acredita.
+    </p>
 
-<p class="frase">
-Toda história merece uma boa pergunta.
-</p>
+    <p class="frase">
+      Histórias • Questionamentos • Conexões
+    </p>
 
-<a class="botao"
-href="https://open.spotify.com/show/033sHqwumjdu2yUEmjJFbl?si=9856cf4923024c4c">
+    <a class="btn" href="https://open.spotify.com/show/033sHqwumjdu2yUEmjJFbl?si=c2707b0cc6394d10" target="_blank">
+      🎧 Ouvir no Spotify
+      <span>Comece pelo podcast</span>
+    </a>
 
-🎙 Ouvir no Spotify
+    <a class="btn" href="https://youtube.com/@religarecast?si=WWvFEadLrzfhUlr8" target="_blank">
+      ▶️ Assistir no YouTube
+      <span>Episódios, vídeos e cortes</span>
+    </a>
 
-</a>
+    <a class="btn" href="https://www.instagram.com/religarecast?igsh=MXFwMGFmanQ3YTRxbQ%3D%3D&utm_source=qr" target="_blank">
+      📸 Seguir no Instagram
+      <span>Bastidores, novidades e trechos</span>
+    </a>
 
-<a class="botao"
-href="https://www.instagram.com/religarecast">
-
-📷 Instagram
-
-</a>
-
-<a class="botao"
-href="https://youtube.com/@religarecast">
-
-▶ YouTube
-
-</a>
-
-<footer>
-
-© Religare Cast
-
-</footer>
-
-</div>
-
+    <footer>
+      © Religare Cast
+    </footer>
+  </main>
 </body>
-
 </html>
