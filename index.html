@@ -17,94 +17,97 @@
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(139, 30, 30, 0.20), transparent 35%),
-    linear-gradient(180deg, #050505 0%, #0b0b0b 100%);
-  color: #f4eee3;
+    radial-gradient(circle at top, rgba(120, 20, 20, 0.28), transparent 32%),
+    radial-gradient(circle at bottom, rgba(180, 140, 80, 0.08), transparent 35%),
+    #050505;
+  color: #f2eadc;
   font-family: Inter, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 32px 18px;
+  padding: 28px 16px;
 }
 
 .container {
   width: 100%;
   max-width: 520px;
   text-align: center;
-  border: 1px solid rgba(244, 238, 227, 0.12);
+  padding: 28px 22px 26px;
   border-radius: 28px;
-  padding: 38px 24px 30px;
-  background: rgba(10, 10, 10, 0.78);
-  box-shadow: 0 0 50px rgba(0,0,0,.55);
+  background: rgba(10, 10, 10, 0.82);
+  border: 1px solid rgba(242, 234, 220, 0.12);
+  box-shadow: 0 0 60px rgba(0,0,0,.65);
 }
 
-.mark {
-  width: 78px;
-  height: 78px;
-  border: 1px solid rgba(244, 238, 227, 0.25);
-  border-radius: 50%;
-  margin: 0 auto 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 18px;
+  margin: 0 auto 24px;
+  display: block;
+  box-shadow: 0 0 35px rgba(139, 30, 30, .20);
+}
+
+.symbol {
   color: #8b1e1e;
-  font-size: 34px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-family: Cinzel, serif;
-  font-size: 48px;
+  font-size: 46px;
   letter-spacing: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
-h2 {
-  font-size: 20px;
+.subtitle {
+  font-size: 19px;
   font-weight: 300;
-  color: #ddd2c3;
-  margin-bottom: 24px;
+  color: #d8cdbc;
+  margin-bottom: 20px;
 }
 
-.divider {
-  width: 90px;
+.line {
+  width: 92px;
   height: 2px;
   background: #8b1e1e;
-  margin: 0 auto 26px;
+  margin: 0 auto 24px;
 }
 
-.texto {
-  font-size: 17px;
-  line-height: 1.65;
-  color: #cfc5b7;
-  margin-bottom: 28px;
+.description {
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: #cfc3b1;
+  margin-bottom: 20px;
 }
 
-.frase {
-  font-size: 15px;
-  color: #9f9383;
+.tags {
+  color: #a99b87;
+  font-size: 14px;
   margin-bottom: 26px;
 }
 
 .btn {
   display: block;
   text-decoration: none;
-  color: #f4eee3;
+  color: #f2eadc;
   background: #171717;
-  border: 1px solid rgba(244, 238, 227, 0.14);
-  padding: 18px 18px;
+  border: 1px solid rgba(242, 234, 220, 0.13);
+  padding: 17px 16px;
   border-radius: 16px;
-  margin: 13px 0;
+  margin: 12px 0;
   font-size: 18px;
   font-weight: 700;
-  transition: 0.2s ease;
+  transition: 0.22s ease;
 }
 
 .btn span {
   display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #9f9383;
   margin-top: 5px;
+  font-size: 13px;
+  color: #9d8f7b;
+  font-weight: 400;
 }
 
 .btn:hover {
@@ -112,28 +115,52 @@ h2 {
   transform: translateY(-2px);
 }
 
+.quote {
+  margin-top: 26px;
+  color: #b8aa96;
+  font-size: 14px;
+  font-style: italic;
+}
+
 footer {
-  margin-top: 30px;
-  color: #766d63;
+  margin-top: 24px;
+  color: #6f6559;
   font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  .container {
+    padding: 24px 18px;
+  }
+
+  .logo {
+    max-width: 310px;
+  }
 }
 </style>
 </head>
 
 <body>
   <main class="container">
-    <div class="mark">✦</div>
+
+    <img src="logo.jpg" alt="Religare Cast" class="logo" onerror="this.style.display='none'">
+
+    <div class="symbol">✦</div>
 
     <h1>RELIGARE</h1>
-    <h2>Aquilo que não se vê.</h2>
+    <p class="subtitle">Aquilo que não se vê.</p>
 
-    <div class="divider"></div>
+    <div class="line"></div>
 
-    <p class="texto">
+    <p class="description">
       Histórias, religiões, mistérios e perguntas que atravessam aquilo que a gente acredita.
     </p>
 
-    <p class="frase">
+    <p class="tags">
       Histórias • Questionamentos • Conexões
     </p>
 
@@ -152,9 +179,14 @@ footer {
       <span>Bastidores, novidades e trechos</span>
     </a>
 
+    <p class="quote">
+      “Toda história merece uma boa pergunta.”
+    </p>
+
     <footer>
       © Religare Cast
     </footer>
+
   </main>
 </body>
 </html>
